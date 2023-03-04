@@ -1,0 +1,80 @@
+.custom-details {
+  font-size: 13px;
+  letter-spacing: 1px;
+  border-radius: 0px;
+  box-shadow: 0px 0px 8px lightgray;
+  border: 1px solid white;
+}
+.custom-details input {
+  font-size: small;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 0px;
+  outline: none;
+}
+.custom-details .card-header {
+  background-color: #90ee90;
+  border-radius: 0px;
+  border: 1px solid white;
+}
+.orderDetails {
+  height: 500px;
+}
+.orderDetails-heading {
+  background: #ec2f3c;
+  color: white;
+}
+.orderItems {
+  height: 420px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.order-item {
+  height: 68px;
+  display: flex;
+  justify-content: start;
+}
+.orderItems::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.orderItems::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+}
+
+/* Handle */
+.orderItems::-webkit-scrollbar-thumb {
+  background: #ec2f3c;
+  border-radius: 10px;
+}
+.div-img {
+  width: 12%;
+}
+.div-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.div-item-details {
+  width: 50%;
+  padding-left: 10px;
+}
+.div-item-details span {
+  font-size: 13px;
+}
+
+.total-price button {
+  font-size: 14px;
+  padding: 6px 8px;
+}
+.total-price span {
+  letter-spacing: 1px;
+}
+.custom-details .btn-paceorder {
+  font-size: small;
+  border-radius: 0px;
+  padding: 6px 40px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,37 @@
+Footer {
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#footText {
+  font-size: 20px;
+}
+.footDiv {
+  height: 50px;
+  width: 33%;
+  display: inline-block;
+  border-right: 2px solid white;
+  cursor: pointer;
+}
+.social a i {
+  font-size: 22px;
+  margin: 10px;
+}
+.noBorder {
+  border: none;
+}
+@media (max-width: 576px) {
+  #footText {
+    font-size: 12px;
+  }
+  .social a i {
+    font-size: 15px;
+    margin: 6px;
+  }
+  .footDiv {
+    height: 38px;
+    font-size: 9px;
+  }
+}

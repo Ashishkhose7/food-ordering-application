@@ -1,0 +1,95 @@
+  login page
+   <div className="container">
+          <hr />
+          <div className="panel panel-success">
+            <div className="panel-heading">
+              <h3>Login</h3>
+              <h2>{this.state.message}</h2>
+            </div>
+            <div className="panel-body">
+              <div className="row">
+                <div className="form-group col-md-6">
+                  <label className="control-label">Email</label>
+                  <input
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <label className="control-label">Password</label>
+                  <input
+                    className="form-control"
+                    id="password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
+              <button className="btn btn-success" onClick={this.handleSubmit}>
+                Login
+              </button>
+            </div>
+          </div>
+        </div> 
+
+
+        signup page
+        <div className="container">
+          <hr />
+          <div className="panel panel-primary">
+            <div className="panel-heading">
+              <h3>Register</h3>
+            </div>
+            <div className="panel-body">
+              <div className="row">
+                <div className="form-group col-md-6">
+                  <label className="control-label">FirstName</label>
+                  <input
+                    className="form-control"
+                    id="fname"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <label className="control-label">Email</label>
+                  <input
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <label className="control-label">Password</label>
+                  <input
+                    className="form-control"
+                    id="password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleChange}
+                  />
+                </div>
+                <div className="form-group col-md-6">
+                  <label className="control-label">Phone</label>
+                  <input
+                    className="form-control"
+                    id="phone"
+                    name="phone"
+                    value={this.state.phone}
+                    onChange={this.handleChange}
+                  />
+                </div>
+              </div>
+              <button className="btn btn-success" onClick={this.checkout}>
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
