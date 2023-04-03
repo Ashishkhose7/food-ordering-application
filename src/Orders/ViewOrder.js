@@ -3,7 +3,7 @@ import Header from "../Header";
 import axios from "axios";
 
 const orderApi = "https://restdataapi.onrender.com/vieworder";
-// const updateOrder = "https://restdataapi.onrender.com/updateOrder";
+const updateOrder = "https://restdataapi.onrender.com/updateOrder";
 class ViewOrder extends Component {
   constructor(props) {
     super(props);
