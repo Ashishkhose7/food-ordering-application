@@ -3,12 +3,12 @@ import Header from "../Header";
 import axios from "axios";
 
 const orderApi = "https://restdataapi.onrender.com/vieworder";
-const updateOrder = "https://restdataapi.onrender.com/updateOrder";
+// const updateOrder = "https://restdataapi.onrender.com/updateOrder";
 class ViewOrder extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      orders: ""
+      orders: "",
     };
   }
   renderBody = (ordersData) => {
@@ -66,16 +66,16 @@ class ViewOrder extends Component {
         let data = {
           status: query[0].split("=")[1],
           date: query[2].split("=")[1],
-          bank_name: query[3].split("=")[1]
+          bank_name: query[3].split("=")[1],
         };
         let id = query[1].split("=")[1].split("_")[1];
         fetch(`${updateOrder}/${id}`, {
           method: "PUT",
           headers: {
             Accept: "application/json",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
           },
-          body: JSON.stringify(data)
+          body: JSON.stringify(data),
         });
       }
     }
